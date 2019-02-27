@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
     <title>Laravel</title>
 
@@ -87,12 +88,13 @@
             </ul>
 
             <div class="tab-content clearfix">
-                <div class="tab-pane active" id="quiz">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCDi0s7n4RmqC-LtdqtJvvIFiBe6v4P2tVCHFvLppYl_ffhA/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Betöltés...</iframe>
+                <div class="tab-pane active iframe-container" id="quiz">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCDi0s7n4RmqC-LtdqtJvvIFiBe6v4P2tVCHFvLppYl_ffhA/viewform?embedded=true" frameborder="0" allowfullscreen>Betöltés...</iframe>
                 </div>
 
-                <div class="tab-pane" id="statistic">
-
+                <div class="tab-pane iframe-container" id="statistic">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCDi0s7n4RmqC-LtdqtJvvIFiBe6v4P2tVCHFvLppYl_ffhA/viewanalytics?embedded=true" frameborder="0" allowfullscreen>Betöltés...</iframe>
+                    <iframe src="https://docs.google.com/forms/d/1nqYW9Xw-MtiiQ6rG_LHmJkc0qm5j6ruO1kxC_cqQVuc/viewanalytics?embedded=true" frameborder="0" allowfullscreen>Betöltés...</iframe>
                 </div>
             </div>
         </div>
