@@ -37135,10 +37135,91 @@ function drawKutyak() {
 }
 
 ;
+
+function drawRuhak() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 5;
+  Highcharts.chart('milyen-szinu-ez-a-ruha', options);
+}
+
+;
+
+function drawJobban() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 6;
+  Highcharts.chart('ki-csinalja-jobban', options);
+}
+
+;
+
+function drawKedvenceink() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 7;
+  Highcharts.chart('hazi-kedvenceink', options);
+}
+
+;
+
+function drawMelyikAJobb() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 8;
+  Highcharts.chart('melyik-a-jobb', options);
+}
+
+;
+
+function drawMelyiketNezedSzivesebben() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 9;
+  Highcharts.chart('melyiket-nezed-szivesebben', options);
+}
+
+;
+
+function drawAlkonyat() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 10;
+  Highcharts.chart('alkonyat', options);
+}
+
+;
+
+function drawHelyesModszer() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 11;
+  Highcharts.chart('helyes-modszer', options);
+}
+
+;
+
+function drawTitanic() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 12;
+  Highcharts.chart('titanic', options);
+}
+
+;
+
+function drawMarvelDc() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 13;
+  Highcharts.chart('marve-dc', options);
+}
+
+;
 $(function () {
   drawCola();
   drawHotdog();
   drawKutyak();
+  drawRuhak();
+  drawJobban();
+  drawKedvenceink();
+  drawMelyikAJobb();
+  drawMelyiketNezedSzivesebben();
+  drawAlkonyat();
+  drawHelyesModszer();
+  drawTitanic();
+  drawMarvelDc();
 });
 
 /***/ }),
