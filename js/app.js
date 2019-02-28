@@ -37086,13 +37086,14 @@ var Highcharts = __webpack_require__(/*! highcharts */ "./node_modules/highchart
 
 __webpack_require__(/*! highcharts/modules/data */ "./node_modules/highcharts/modules/data.js")(Highcharts);
 
-var chartOptions = {
+var baseOptions = {
   chart: {
     plotBackgroundColor: null,
     plotBorderWidth: null,
     plotShadow: false,
     type: 'pie'
   },
+  colors: ['red', 'blue', 'orange', 'green', 'purple', 'brown'],
   title: {
     text: ""
   },
@@ -37112,13 +37113,32 @@ var chartOptions = {
 };
 
 function drawCola() {
-  chartOptions.data.googleSpreadsheetWorksheet = 2;
-  Highcharts.chart('melyik-a-finomabb', chartOptions);
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 2;
+  Highcharts.chart('melyik-a-finomabb', options);
+}
+
+;
+
+function drawHotdog() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 3;
+  Highcharts.chart('a-hotdog-is-szendvics', options);
+}
+
+;
+
+function drawKutyak() {
+  var options = JSON.parse(JSON.stringify(baseOptions));
+  options.data.googleSpreadsheetWorksheet = 4;
+  Highcharts.chart('kutyak', options);
 }
 
 ;
 $(function () {
   drawCola();
+  drawHotdog();
+  drawKutyak();
 });
 
 /***/ }),

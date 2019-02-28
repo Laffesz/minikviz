@@ -102,7 +102,20 @@
                 </div>
 
                 <div class="tab-pane" id="statistic">
-                    <?php echo $__env->make('charts', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                    <div class="chart">
+                        <h3>Melyik a finomabb?</h3>
+                        <div id="melyik-a-finomabb"></div>
+                    </div>
+
+                    <div class="chart">
+                        <h3>A hotdog is egy szendvics?</h3>
+                        <div id="a-hotdog-is-szendvics"></div>
+                    </div>
+
+                    <div class="chart">
+                        <h3>Ha a kutyák nadrágot hordanának, hogyan viselnék?</h3>
+                        <div id="kutyak"></div>
+                    </div>
                 </div>
             </div>
         </div>
